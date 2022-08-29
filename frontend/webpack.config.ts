@@ -15,7 +15,7 @@ export const plugins = [
 		patterns: [
 			{
 				from: path.resolve(__dirname, 'src', 'assets'),
-				to: path.resolve(__dirname, 'dist', 'assets'),
+				to: path.resolve(__dirname, '..', 'backend', 'public', 'assets'),
 				filter: async (resourcePath) => {
 					const name = resourcePath.split('/').at(-1) as string;
 
@@ -27,7 +27,7 @@ export const plugins = [
 			},
 			{
 				from: path.resolve(__dirname, 'src', 'locales'),
-				to: path.resolve(__dirname, 'dist', 'locales'),
+				to: path.resolve(__dirname, '..', 'backend', 'public', 'locales'),
 			},
 		],
 	}),
@@ -41,7 +41,7 @@ export default {
 		assetModuleFilename: (pathData) => {
 			return pathData.filename?.replace(/src\//, '');
 		},
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, '..', 'backend', 'public', 'bundles'),
 		filename: '[name].js',
 	},
 	resolve: {
