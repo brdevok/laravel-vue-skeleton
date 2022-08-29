@@ -1,0 +1,11 @@
+@import '~normalize.css';
+
+@import './fonts';
+@import './base';
+
+@import './utils/colors';
+
+@import '../app/App.scss';
+// Glob imports will fail if there is not scss files in these directories.
+@import '../views/**/*.scss';
+@import '../components/**/*.scss';

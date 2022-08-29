@@ -1,0 +1,52 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:vue/base",
+		"plugin:vue/vue3-essential",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "vue-eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"parser": "@typescript-eslint/parser",
+		"sourceType": "module"
+	},
+	"plugins": ["vue", "@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/consistent-type-imports": "error",
+		"no-use-before-define": "off",
+		"getter-return": "error",
+		"no-const-assign": "error",
+		"no-dupe-args": "error",
+		"no-duplicate-case": "error",
+		"no-irregular-whitespace": "error",
+		"no-template-curly-in-string": "error",
+		"no-unexpected-multiline": "error",
+		"no-unreachable": "error",
+		"no-unused-expressions": "warn",
+		"no-unused-labels": "warn",
+		"default-case": "error",
+		"eqeqeq": "error",
+		"prefer-template": "error",
+		"no-console": "warn",
+		"comma-dangle": [
+			"error",
+			{
+				"objects": "always-multiline",
+				"arrays": "always-multiline",
+				"functions": "always-multiline",
+				"imports": "always-multiline"
+			}
+		],
+		"array-bracket-spacing": "error",
+		"object-curly-spacing": ["error", "always"],
+		"semi": ["error", "always"],
+		"quotes": ["error", "single"],
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "unix"]
+	}
+}
